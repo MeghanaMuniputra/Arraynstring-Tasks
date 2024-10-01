@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-image: conic-gradient(red, yellow, green);
+      color: rgb(33, 10, 101); 
+      font-size: larger;
+      font-weight: 400;
+      }
+  </style>
+</head>
+<body>
+  <script>
+    let words = ["apple", "banana", "grape", "watermelon", "kiwi", "strawberry"];
+    let newwords= words.filter(words => words.length > 5);
+    let ul = document.createElement('ul');
+    newwords.forEach( newwords=>{
+      let  li = document.createElement("li")
+      li.textContent = newwords
+      ul. appendChild(li) 
+  } )
+  document.body.appendChild(ul)
+  </script>
+</body>
+</html>
+    
+
+
+  
+   

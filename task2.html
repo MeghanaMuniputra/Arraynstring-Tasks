@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(rgb(229, 98, 98), rgb(244, 244, 64), rgb(115, 212, 214));
+            text-align: center;
+            color: rgb(22, 15, 29);
+            background-color: #83efc9;
+            font-size: larger;
+            font-weight: 400;
+            transform:scale(2)
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        let array = ["hello", "world","javascript","dom!!"]
+        let newarray= array.map(array=>array.toUpperCase())
+        let p =document.createElement("p")
+        p.innerText=newarray.join(" ")
+        document.body.appendChild(p)  
+    </script>
+
+</body>
+</html>

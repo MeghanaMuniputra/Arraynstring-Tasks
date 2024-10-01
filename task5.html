@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            background-color: rgb(121, 66, 232);
+            font-size: larger;
+            font-weight: bolder;
+            color:rgb(224, 243, 227);
+            width: 90vw;
+            height: 40px;
+            padding-top: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+    let arr = ["apple","banana","grape"]
+    arr.map((a)=>{
+    let count=a.match(/[aeiou]/gi).length
+    let ul=document.createElement("ul")
+    let list = document.createElement("li")
+    list.innerText =a+`(${count}vowels)`
+    ul.appendChild(list)
+    document.body.appendChild(ul)})
+    </script>
+    
+</body>
+</html>
